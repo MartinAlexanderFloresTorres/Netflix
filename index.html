@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preload" href="img/banner.jpg" as="image">
+    <link rel="preload" href="img/6.jpg" as="image">
+    <link rel="preload" href="img/3.jpeg" as="image">
+    <link rel="preload" href="img/4.jpg" as="image">
+    <link rel="preload" href="img/5.jpeg" as="image">
+    <link rel="preload" href="img/2.jpg" as="image">
+    <!-- js -->
+    <link rel="preload" href="js/main.js" as="script">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,300&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/N-logo.png" type="image/x-icon">
+    <title>Netflix Perú</title>
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="header">
+
+        <div class="header-contenedor max-width">
+            <div class="header-logo">
+                <img src="img/logo-neflix.png" alt="logo-neflix" class="header-logo__img">
+            </div>
+            <div class="header-botones">
+                <div class="header-select">
+                    <i class="fas fa-globe header-select__i"></i>
+                    <select name="select" class="header-select__select">
+                        <option selected value="es" class="header-select__option">Español</option>
+                        <option value="en"  class="header-select__option">Ingles</option>
+                    </select>
+                </div>
+                <button class="header-botones__button">Iniciar Sesión</button>
+            </div>
+        </div>
+
+        <div class="header-contenedor-texto max-width">
+            <div class="header-texto">
+                <h1 class="header-texto__title">Películas y series ilimitadas y mucho más.</h1>
+                <p class="header-texto__parrafo">Disfruta donde quieras. Cancela cuando quieras.</p>
+                <p class="header-texto__pregunta">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+    
+                <form class="header-texto__form">
+                    <input class="header-form__input" type="email" name="email" id="email" placeholder="Email" required>
+                    <button class="header-form__button" type="submit">Comenzar <i class="fas fa-chevron-right header-button__i"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <main class="main">
+        <section class="main-contenedor">
+            <div class="main-flex max-width">
+                <div>
+                    <h2 class="header-texto__title header-texto__title--margin">Disfruta en tu TV.</h2>
+                    <p  class="header-texto__parrafo">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+                </div>
+                <div class="main-animacion">
+                    <img class="main-animacion__img" src="img/tv.png" alt="televicion">
+                    <video  playsinline muted loop autoplay class="main-animacion_video" src="img/video-tv-0819.mp4" ></video>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-contenedor">
+            <div class="main-flex max-width">
+                <div>
+                    <h2 class="header-texto__title header-texto__title--margin">Descarga tus series para verlas offline.</h2>
+                    <p  class="header-texto__parrafo">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
+                </div>
+                <div class="main-animacion">
+                    <img class="main-animacion__img" src="img/mobile-0819.jpg" alt="mobile-0819">
+                   <div class="main-loading">
+                        <img class="main-loading__boxshot" src="img/boxshot.png" alt="boxshot">
+                       <div>
+                        <p class="main-loading__negrita">Stranger Things</p>
+                        <span class="main-loading__azul" >Descargando...</span>
+                       </div>
+                    <div class="main-iconos">
+                        <i class="fas fa-download main-iconos__download"></i>
+                        <i class="fas fa-mobile-alt main-iconos__mobile"></i>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-contenedor">
+            <div class="main-flex max-width">
+                <div>
+                    <h2 class="header-texto__title header-texto__title--margin">Disfruta donde quieras.</h2>
+                    <p  class="header-texto__parrafo">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.</p>
+                </div>
+                <div class="main-animacion">
+                    <img class="main-animacion__img" src="img/device-pile.png" alt="televicion">
+                    <video  playsinline muted loop autoplay class="main-animacion_video" src="img/video-devices.mp4" autoplay></video>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-contenedor">
+            <div class="main-flex max-width">
+                <div>
+                    <h2 class="header-texto__title header-texto__title--margin">Crea perfiles para niños.</h2>
+                    <p  class="header-texto__parrafo">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</p>
+                </div>
+                <div class="main-animacion">
+                    <img class="main-animacion__img" src="img/niños.png" alt="televicion">
+                </div>
+            </div>
+        </section>
+
+        <section class="main-contenedor">
+            <div class="main-info max-width">
+                <div>
+                    <h2 class="header-texto__title">Preguntas frecuentes</h2>
+                </div>
+
+                <section class="main-items">
+                    <div class="main-item">
+                        <div class="main-toogle">
+                            <h2 class="main-toogle__texto">¿Qué es Netflix?</h2>
+                            <div class="main-ico">
+                                <i class="fas fa-plus main-ico__plus"></i>
+                                <i class="fas fa-times main-ico__times"></i>
+                            </div>
+                        </div>
+                        <div class="main-texto">
+                            <div class="main-texto__padding">
+                                <p class="main-texto__texto margin">Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.</p>
+                                <p class="main-texto__texto"> Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!</p>
+                            </div>
+                        </div>
+                    </div> <!-- fin -->
+
+                    <div class="main-item">
+                        <div class="main-toogle">
+                            <h2 class="main-toogle__texto">¿Cuánto cuesta Netflix?</h2>
+                            <div class="main-ico">
+                                <i class="fas fa-plus main-ico__plus"></i>
+                                <i class="fas fa-times main-ico__times"></i>
+                            </div>
+                        </div>
+                        <div class="main-texto">
+                            <div class="main-texto__padding">
+                                <p class="main-texto__texto">Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde S/24.90 hasta S/44.90 al mes. Sin costos adicionales ni contratos.</p>
+                            </div>
+                        </div>
+                    </div> <!-- fin -->
+                    
+
+                    <div class="main-item">
+                        <div class="main-toogle">
+                            <h2 class="main-toogle__texto">¿Dónde puedo ver Netflix?</h2>
+                            <div class="main-ico">
+                                <i class="fas fa-plus main-ico__plus"></i>
+                                <i class="fas fa-times main-ico__times"></i>
+                            </div>
+                        </div>
+                        <div class="main-texto">
+                            <div class="main-texto__padding">
+                                <p class="main-texto__texto margin">Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.</p>
+                                <p class="main-texto__texto">Además, puedes descargar tus series favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.</p>
+                            </div>
+                        </div>
+                    </div> <!-- fin -->
+                    
+                    <div class="main-item">
+                        <div class="main-toogle">
+                            <h2 class="main-toogle__texto">¿Cómo cancelo?</h2>
+                            <div class="main-ico">
+                                <i class="fas fa-plus main-ico__plus"></i>
+                                <i class="fas fa-times main-ico__times"></i>
+                            </div>
+                        </div>
+                        <div class="main-texto">
+                            <div class="main-texto__padding">
+                                <p class="main-texto__texto">Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.</p>
+                            </div>
+                        </div>
+                    </div> <!-- fin -->
+                    
+                    <div class="main-item">
+                        <div class="main-toogle">
+                            <h2 class="main-toogle__texto">¿Qué puedo ver en Netflix?</h2>
+                            <div class="main-ico">
+                                <i class="fas fa-plus main-ico__plus"></i>
+                                <i class="fas fa-times main-ico__times"></i>
+                            </div>
+                        </div>
+                        <div class="main-texto">
+                            <div class="main-texto__padding">
+                                <p class="main-texto__texto margin">Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.</p>
+                            </div>
+                        </div>
+                    </div> <!-- fin -->
+                    
+                    <div class="main-item">
+                        <div class="main-toogle">
+                            <h2 class="main-toogle__texto">¿Es bueno Netflix para los niños?</h2>
+                            <div class="main-ico">
+                                <i class="fas fa-plus main-ico__plus"></i>
+                                <i class="fas fa-times main-ico__times"></i>
+                            </div>
+                        </div>
+                        <div class="main-texto">
+                            <div class="main-texto__padding">
+                                <p class="main-texto__texto margin">La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio.</p>
+                                <p class="main-texto__texto"> Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.</p>
+                            </div>
+                        </div>
+                    </div> <!-- fin -->
+                    
+
+                    <div class="main-formulario">
+                        <p class="header-texto__pregunta">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                        <form class="header-texto__form">
+                              <input class="header-form__input" type="email" name="email" id="email" placeholder="Email" required>
+                        <button class="header-form__button" type="submit">Comenzar <i class="fas fa-chevron-right header-button__i"></i></button>
+                        </form>
+                    </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-contenedor max-width">
+            <h3 class="footer-contenedor__title">¿Preguntas? Llama al <a class="footer-contenedor__title" href="tel:01-820-2452">01-820-2452</a></h3>
+            <div class="footer-grid">
+                <ul>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Preguntas frecuentes</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Relaciones con inversionistas</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Formas de ver</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Información corporativa</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Solo en Netflix</a></li>
+                </ul>
+
+                <ul>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Centro de ayuda</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Empleo</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Términos de uso</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Contáctanos</a></li>
+                </ul>
+
+                <ul>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Cuenta</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Canjear tarjetas de regalo</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Privacidad</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Prueba de velocidad</a></li>
+                </ul>
+
+                <ul>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Prensa</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Comprar tarjetas de regalo</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Preferencias de cookies</a></li>
+                    <li class="footer-grid__enlace"><a class="footer-grid__a" href="#">Avisos legales</a></li>
+                </ul>
+            </div>
+            <div class="header-botones">
+                <div class="header-select">
+                    <i class="fas fa-globe header-select__i"></i>
+                    <select name="select" class="header-select__select">
+                        <option selected value="es" class="header-select__option">Español</option>
+                        <option value="en"  class="header-select__option">Ingles</option>
+                    </select>
+                </div>
+            </div>
+        
+            <p class="footer-grid__texto">Netflix Perú</p>
+        </div>
+    </footer>
+
+
+<!--     <i class="fas fa-globe"></i>
+    <i class="fas fa-mobile-alt"></i>
+    <i class="fas fa-check"></i>
+    <i class="fas fa-download"></i>
+    <i class="fas fa-plus"></i>
+    <i class="fas fa-chevron-right"></i>
+    <i class="fas fa-times"></i> -->
+
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/b45f192329.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
