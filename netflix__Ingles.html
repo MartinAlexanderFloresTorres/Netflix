@@ -60,10 +60,20 @@
                 <h1 class="header-texto__title">Unlimited movies and series and much more.</h1>
                 <p class="header-texto__parrafo">Enjoy wherever you want. Cancel whenever you want.</p>
                 <p class="header-texto__pregunta">Do you want to watch Netflix now? Enter your email to create an account or restart your Netflix membership.</p>
-    
-                <form class="header-texto__form">
-                    <input class="header-form__input" type="email" name="email" id="email" placeholder="Email" required>
-                    <button class="header-form__button" type="submit">Begin <i class="fas fa-chevron-right header-button__i"></i></button>
+
+                <form class="header-texto__form" id="formulario-uno">
+                    <div class="spinner" id="spinerUno">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                    <div class="header-form__cont">
+                        <span class="invalido">Invalid Email</span>
+                        <input class="header-form__input" name="email" id="email-uno" placeholder="Email">
+                    </div>
+                    <button class="header-form__button" id="boton-uno" type="submit">Begin <i class="fas fa-chevron-right header-button__i"></i></button>
                 </form>
             </div>
         </div>
@@ -237,9 +247,19 @@
 
                     <div class="main-formulario">
                         <p class="header-texto__pregunta">Do you want to watch Netflix now? Enter your email to create an account or restart your Netflix membership.</p>
-                        <form class="header-texto__form">
-                              <input class="header-form__input" type="email" name="email" id="email" placeholder="Email" required>
-                        <button class="header-form__button" type="submit">Begin <i class="fas fa-chevron-right header-button__i"></i></button>
+                        <form class="header-texto__form" id="formulario-dos">
+                            <div class="spinner" id="spinerDos">
+                                <div class="rect1"></div>
+                                <div class="rect2"></div>
+                                <div class="rect3"></div>
+                                <div class="rect4"></div>
+                                <div class="rect5"></div>
+                            </div>
+                            <div class="header-form__cont">
+                                <span class="invalido-dos invalido">Email invalido</span>
+                                <input class="header-form__input" name="email" id="email-dos" placeholder="Email">
+                            </div>
+                            <button class="header-form__button" id="boton-dos" type="submit">Begin <i class="fas fa-chevron-right header-button__i"></i></button>
                         </form>
                     </div>
             </section>
